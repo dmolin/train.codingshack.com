@@ -1,0 +1,19 @@
+{
+  "name": "traincodingshack",
+  "version": "0.0.1",
+  "description": "CodingShack Ltd Training landing page",
+  "author": "Davide Alberto Molin <@davidemolin> (http://www.davidemolin.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dmolin/train.codingshack.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "flightplan": "*"
+  },
+  "engines": {
+    "node": ">=0.10.20"
+  }
+}

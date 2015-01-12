@@ -1,0 +1,356 @@
+/*====================
+ Base
+ ====================*/
+
+body, *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html, * {
+    font-family: 'Open Sans', sans-serif;
+    line-height:1.3;
+    color: #5D5D5D;
+}
+
+body {
+    min-width: 320px;
+}
+
+small {
+    color: #333;
+}
+
+h1,h2,h3 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+    text-shadow: 0px 2px 2px rgba(10, 10, 10, 1);
+    color: #FF7900;
+    font-weight: 400;
+    }
+
+    @media (min-width: 640px) {
+        h1 {
+            font-size: 2.8em;
+        }
+    }
+
+h2 {
+    font-size: 1.4em;
+    line-height: 1em;
+}
+
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+em {
+    font-weight: 700;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+.raised {
+    /*background-color: #F9F9F9;*/
+    background-color: #DDD;
+}
+
+/* =========================================================
+ * Style classes starting with "l-" refer to "layout" components
+ * (grouping concepts that affect layout, width and margins)
+ * =========================================================*/
+.l-wrapper {
+    margin: 0 auto;
+    max-width: 1176px;
+    overflow: hidden;
+    position: relative;
+}
+
+.l-open-wrapper {
+    margin: 0 auto;
+    max-width: 1176px;
+    overflow: visible;
+    position: relative;
+}
+
+
+/* =========================================================
+ * Modular and reusable styles
+ * =========================================================*/
+
+/*================================
+  Generic components
+ *================================*/
+
+.overlay {
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.filler {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+.pure-button {
+    border: 1px solid #1E6899;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.pure-button-primary {
+    background-color: #1E6899 !important;
+}
+
+.structural {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute!important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*================================
+  Header
+ *================================*/
+.top-header {
+    padding: 0.5em 1em;
+}
+
+.top-header-logo {
+    background: url('../images/logo.png') left top no-repeat;
+    display: block;
+    __width: 242px;
+    __height: 74px;
+    width: 180px;
+    height: 45px;
+    background-size: 100%;
+}
+
+/*================================
+  Hero image
+ *================================*/
+.hero {
+    background: url('../images/background-workspace-slim.jpg') top center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.hero-cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    }
+
+    .hero-content > .content {
+        width: 80%;
+        max-width: 960px;
+    }
+
+    @media screen and (min-width: 48em) {
+        .hero-content > .content {
+            width: 66%;
+        }
+
+    }
+
+
+.hero-content-title em {
+    color: #1E7C99;
+}
+
+.hero-content-sub,
+.hero-content-pre {
+    color: #eee;
+}
+
+.hero-content-pre {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.hero-cta {
+    display: block;
+    box-shadow: 0px 2px 4px 1px #000;
+    width: 80%;
+    max-width: 420px;
+    margin: 5% auto 0;
+}
+
+.hero-price-tag {
+    position: absolute;
+    __right: -20px;
+    __top: -50px;
+    __width: 250px;
+    __height: 254px;
+    width: 180px;
+    height: 183px;
+    left: 50%;
+    margin-left: -90px;
+    background: url('../images/course-price-left-180.png') top left no-repeat;
+    __background-size: 80%;
+    }
+
+    @media screen and (min-width: 30em) {
+        .hero-price-tag {
+            left: inherit;
+            right: 20px;
+            top: -50px;
+        }
+    }
+
+/*================================
+  Content blocks
+ *================================*/
+
+.content-block {
+    padding: 1em;
+}
+.content-block:nth-child(2n+2) {
+    background-color: #EEE;
+}
+
+.content-block ul.rich {
+    list-style: inherit;
+}
+
+
+/*================================
+  Money back guarantee
+ *================================*/
+
+.money-back-wrapper {
+    max-width: 140px;
+}
+.money-back-logo {
+    display: block;
+    width: 100%;
+}
+
+
+/*================================
+  Techs
+ *================================*/
+
+.tech {
+    margin: 0 auto;
+    padding: 2em;
+    }
+
+    .tech h3 {
+        margin: 0;
+    }
+
+.tech-icon {
+    display: block;
+    width: 66px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.tech-html5 {
+    background: url('../images/tech-html5.png') top center no-repeat;
+}
+.tech-css {
+    background: url('../images/tech-css3.png') top center no-repeat;
+}
+.tech-js { background: url('../images/tech-js.png') top center no-repeat; }
+.tech-jquery {
+    background: url('../images/tech-jquery.png') center center no-repeat;
+    width: 214px;
+}
+.tech-backbone {background: url('../images/tech-backbone.png') top center no-repeat;}
+.tech-mocha {
+    background: url('../images/tech-mocha.png') top center no-repeat;
+    width: 76px;
+}
+
+
+/*================================
+  Preview
+ *================================*/
+
+.youtube-playlist {
+    background-color: #fff;
+    margin-bottom: 2em;
+}
+
+.youtube-playlist-thumb > img {
+    width: 100%;
+    display: block;
+}
+
+.youtube-playlist-content-title {
+    font-size: 1.4em;
+}
+
+.youtube-playlist-content-sub {
+    margin-top: 0.2em;
+    color: #888;
+}
+
+/*================================
+  CTA-bottom
+ *================================*/
+
+.cta-bottom {
+    margin: 1em 0 2em;
+}
+
+.cta-bottom-claim {
+    text-align: center;
+}
+
+.cta-bottom-btn {
+    display: block;
+    box-shadow: 0px 2px 4px 1px #000;
+    width: 80%;
+    max-width: 420px;
+    margin: 0 auto 1em;
+}
+
+.main-footer {
+    background: url('../images/background-workspace-slim.jpg') bottom left no-repeat;
+    background-size: cover;
+    padding: 1em;
+    }
+    .main-footer small {
+        color: #eee;
+    }
