@@ -33,7 +33,6 @@ h1 {
     margin: 0.5em 0;
     font-size: 2em;
     line-height: 1em;
-    __text-shadow: 0px 1px 1px rgba(10, 10, 10, 1);
     color: #FF7900;
     font-weight: 400;
     }
@@ -226,7 +225,7 @@ a.cta {
 
 .hero-content-title em {
     color: #1E7C99;
-    text-shadow: 0px 1px 1px rgba(10, 10, 10, 1);
+    text-shadow: 0px 1px 1px #333;
 }
 
 .hero-content-sub,
@@ -339,6 +338,7 @@ a.cta {
 .youtube-playlist {
     background-color: #fff;
     margin-bottom: 2em;
+    border: 1px solid #ddd;
 }
 
 .youtube-playlist-thumb > img {
