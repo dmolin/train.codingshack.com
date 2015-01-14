@@ -10,7 +10,7 @@
     <meta name="application-name" content="Foundations of Frontend Development">
     <meta name="description" content="Learn Web Development from scratch with the online course 'Foundations of Frontend Development'. ">
 
-    <meta name="keywords" content="web development, school, course, Javascript, Front-End, Davide Alberto Molin, Front-End Development">
+    <meta name="keywords" content="web development, school, course, Javascript, Front-End, Davide Alberto Molin, Front-End Development, job, career">
 
     <link rel="stylesheet" href="css/reset.css">
 
@@ -22,25 +22,45 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
+<body  itemscope itemtype="http://schema.org/Product">
+<meta itemprop="name" content="Foundations of Front-End Web Development" >
+<meta itemprop="description" content="Learn Web Development from scratch with the online course 'Foundations of Frontend Development'.">
+<meta itemprop="url" content="http://fedtraining.usefedora.com/course/foundations-of-front-end-web-development/">
 
-<header class="top-header">
+<header class="top-header" itemprop="brand" itemtype="http://schema.org/Organization" itemscope>
     <div class="l-wrapper">
-        <a href="#" class="top-header-logo"><span class="structural">CodingShack Ltd. Training</span></a>
+        <meta itemprop="name" content="CodingShack Ltd.">
+        <a href="#" class="top-header-logo" itemprop="logo" itemtype="http://schema.org/ImageObject" itemscope>
+            <img src="images/logo.png" class="structural" itemprop="contentUrl">
+            <span class="structural">CodingShack Ltd. Training</span>
+        </a>
     </div>
 </header>
 
 <section class="hero">
-    <div class="l-open-wrapper cf">
-        <a href="http://fedtraining.usefedora.com/course/foundations-of-front-end-web-development/" class="hero-price-tag">
-        <p class="structural">
-            Buy now for only $39!
-        </p>
+    <div class="structural"  itemprop="logo" itemtype="http://schema.org/ImageObject" itemscope>
+        <img src="images/fofed.png" itemprop="contentUrl">
+    </div>
+    <div class="l-open-wrapper cf" itemprop="offers" itemscope itemtype="http://schema/Offer">
+        <a href="http://fedtraining.usefedora.com/course/foundations-of-front-end-web-development/"
+            class="hero-price-tag" itemprop="offerUrl">
+
+            <p class="structural" >
+                Buy now for only
+                    <span itemprop="priceCurrency" content="USD">$</span>
+                    <span itemprop="price" content="39">39</span>!
+                    <span class="structural" itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition" itemscope>
+                        <meta itemprop="description" content="30 days money back guarantee!">
+                        <span class="strutural" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope>
+                            <img src="images/moneyback.png" itemprop="contentUrl">
+                        </span>
+                    </span>
+            </p>
         </a>
     </div>
     <div class="hero-cover overlay"></div>
     <div class="hero-content ">
-        <div class="content">
+        <div class="content" >
             <p class="hero-content-pre">Do you want to learn an exciting, trending and rewarding profession?</p>
             <h1 class="hero-content-title"><em>Foundations</em> of Front-End Web Development</h1>
             <p class="hero-content-sub">Learn the skills to quickly start a career in Web Development today!</p>
