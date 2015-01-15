@@ -267,7 +267,7 @@ a.cta {
 .content-block {
     padding: 1em;
 }
-.content-block:nth-child(2n+2) {
+.content-block:nth-child(2n+1) {
     background-color: #EEE;
 }
 
